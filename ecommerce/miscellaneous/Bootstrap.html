@@ -1,0 +1,261 @@
+<?php echo ?>
+
+<h1>Include Bootstrap CSS and JS</h1>
+################################################
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> bootstap demo </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1> Hello World! </h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+____________________________________________________________________________________________________________
+
+
+<h2>table in bootstrap</h2>
+
+###########################
+
+<div class="container">
+        <div class="row">
+                <div class="col-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th></th>                              
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+        </div>
+</div>
+
+
+______________________________________________________________________________________________________
+
+
+<h3>card in bootstrap</h3>
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> Card title </h5>
+                    <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary"> Go somewhere </a>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+<h1>badge or notification </h1>
+
+
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+
+
+______________________________________________________________________________________________________
+
+       <h1>alert</h1>
+    ################################
+
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+-----------------------------------------------------------------------------------------------------------
+
+form in bootstap
+###########################
+
+<!-- 
+  عباره عن : 
+
+  2 input 
+  1 select with 4 options 
+  1 submit
+ -->
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-8 mx-auto">
+          <form action="" method="">
+              <div class="mb3">
+                  <input type="" name="" class="form-control" >
+              </div>
+              <div class="mb3">
+                  <input type="" name="" class="form-control" >
+              </div>
+              <select name="" class="form-control" >
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+              </select>
+              <div class="mb3">
+                <input type="submit" value="" class = "form-control bg-success" >
+            </div>
+          </form>
+      </div>
+  </div>
+</div>  
+
+<!-- 
+     <input type="submit" value="" class = "form-control btn btn-success" > : لون افتح
+
+ -->
+ <!-- 
+  لو عايز اعرض الايرور : 
+  .alert.alert-danger
+  .alert.alert-danger.text-center
+
+  لو عايز اعرض success : 
+  .alert.alert-success
+  -->
+
+  
+
+##############################################################
+
+emmat 
+################################
+
+table 
+###########################
+
+
+.container>.row>table.table.table-bordered : 
+تابل متروق عليه - بس امشي مع ايميت مره واحده عشان تظبط 
+يعني لازم يظهرلك ان ده ايميت 
+
+
+##############################################################
+
+form 
+###########################
+
+
+Form in bootstrap : 
+
+1- .container>.row>.col-8.mx-auto 
+
+2- Form 
+
+"لو مكتبتش method 
+الديفولت get 
+لو عايز post 
+لازم اكتب method "
+
+3- .mb3
+
+ : عباره عن div 
+
+
+4- input : number
+class = "form- control"
+
+
+: حط جواها input - بالنوع بتاعه مثل number
+                      واديله كلاس بوتستراب form- control
+"في اinput بديله النيم اللي هو الكي مش بديله فاليو "
+
+
+5- select 
+class = "form- control"
+option
+
+
+  " اي حاجه فيها اختيارات او كذا حاجه استخدم Select 
+                                                        وجواها option "
+"والفاليو بتاعته هي value اللي بتبعت ف url 
+وحط اختياراتك "
+
+
+6- .mb3
+input : submit
+class = "form control btn btn-success 
+"
+
+
+"والفاليو بتاعه سبميت يعني ايه اللي هيتكتب علي الزرار"
+
+action : 
+الاكشن بتاع الفورم هيروح فين او الصفحه اللي عايز اروحها 
+اة هبعت البيانات لمين 
+
+
+
+##############################################################
+
+nav bar
+###########################
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+ 
